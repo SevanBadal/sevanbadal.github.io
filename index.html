@@ -1,1 +1,117 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<title>Lab 14</title>
+</head>
+<body>
+	<h1>Lab 13</h1>
+	<h2>Overview & Setup</h2>
+	<div class="toggle">
+		<p>Today's objective is to deploy your midterm project on GitHub Pages.  Follow the steps below and submit a link to your GitHub Page's site using the Lab 13 submission form.</p>
+		<ol>
+			<li>Use my feedback in the midterm submission page to update your midterm project's source code</li>
+			<li>In addition to my comments, edit your project's file structure by creating the following folders: 
+				<ul>
+					<li>styles</li>
+					<li>images</li>
+					<li>scripts</li>
+					<li>docs</li>
+					<li>audio</li>
+					<li>video</li>
+				</ul>
+				
+			</li>
+			<li>Move all stylesheets, images, scripts, audio and video files to their respective directories.  You will need to update all paths that point to these resources.  Read more about project structure <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files">here</a>.</li>
+			<li>Index files are entry points to static websites. If you don't already have one, identify an HTML file that can be used as a <em>home page</em> then rename that file to <code>index.html</code>.</li>
+			<li>The source code to this lab can be found here: <a href="https://github.com/SevanBadal/sevanbadal.github.io">https://github.com/SevanBadal/sevanbadal.github.io</a></li>
+		</ol>
+	</div>
+	<h2>Checkpoint 1</h2>
+	<div class="toggle">
+	<p>Your project should have a similar project structure as the one below:</p>
+	<p style="display: flex; justify-content: center;">
+		<codeblock style="width: 100%;">
+./
+   |
+    -index.html
+   |
+    -other-html-files.html
+   |
+    -images/
+      |
+       -some-image.png  
+   |
+    -styles/
+      |
+       -some-styles.css
+   |
+    -scripts/
+      |
+       -some-script.js
+		</codeblock>
+	</p>
+	</div>
+	<h2>GitHub Account & Repository</h2>
+	<div class="toggle">
+	<ol>
+		<li><a href="https://github.com/">Create a GitHub account</a>. Keep in mind that the <em>subdomain</em> of your GitHub Page will be your GitHub username. The image below illustrates the different components of a domain.
+		<div style="display: flex; justify-content: space-around;padding: 2rem; background: #D4D4D4; border: 1px solid #ddd;	border-radius: 2px;">
+			<img src="./images/domain-description-image.webp" alt="github">
+		</div>
+		</li>
+		<li>Explore the user interface and create a new repository. The name of this repo MUST be <em>username.github.io</em> where <em>username</em> is your GitHub username. Leave all other fields and settings as their default values.</li>
+		<div style="display: flex; justify-content: space-around;padding: 2rem; background: #D4D4D4; border: 1px solid #ddd;	border-radius: 2px;">
+				<img src="./images/github-repo.png" alt="github">
+		</div>
+		<li>Create a file named <code>index.html</code> in the newly created repository (there is a link to create a file in the text "Get started by creating a new file" ). Add <em>Hello, World!</em> to give the file some content. We will update this later.
+			<div style="display: flex; justify-content: space-around;padding: 2rem; background: #D4D4D4; border: 1px solid #ddd;	border-radius: 2px;">
+				<img src="./images/create-file.png" alt="github">
+			</div>
+		</li>
+		<li>Commit the new file to the repository</li>
+	</ol>
+	</div>
+	<h2>Checkpoint 2</h2>
+	<div class="toggle">
+		<p>In your browser, navigate to <em>username.github.io</em>. Again, <em>username</em> should be the username of your GitHub account.</p>
+		<div style="display: flex; justify-content: space-around;padding: 2rem; background: #f4f4f4; border: 1px solid #ddd;	border-radius: 2px;">
+				<img src="./images/index-page.png" alt="github">
+		</div>
+	</div>
+	<h2>Repository File Structure</h2>
+	<div class="toggle">
+		<p>In this section, we will replicate the file structure of your local project in the Github repository.</p>
+		<ol>
+			<li>GitHub doesn't allow the creation of <a href="https://stackoverflow.com/questions/115983/how-can-i-add-a-blank-directory-to-a-git-repository"> empty directories</a>. Instead, we will create <code>.gitkeep</code> files in each subdirectory in our project. To do this, select <em>add file</em> and choose <em>create new file</em>.
+		</li>
+		<li>Type <code>styles/.gitkeep</code> where it asks you to name the file. This will create a folder, <em>styles</em>, and a file, <em>.gitkeep</em>. You can leave this file empty and click <em>commit new file</em>.</li>
+		<li>Repeat the step above for each subdirectory in your project</li>
+		</ol>
+	</div>
+	<h2>Checkpoint 3</h2>
+	<div class="toggle">
+		<p>Your GitHub repository should have a file structure that matches the file structure in the image below:</p>
+		<div style="display: flex; justify-content: space-around;padding: 2rem; background: #D4D4D4; border: 1px solid #ddd; border-radius: 2px;">
+			<img src="./images/file-structure.png" alt="github">
+		</div>
+	</div>
+	<h2>Uploading Files</h2>
+	<div class="toggle">
+		<p>In this section, you will upload all files to the repository.</p>
+		<ul>
+			<li>
+			 	Starting with <code>images</code> and <code>styles</code> directories, navigate into a subdirectory and select <em>add file</em>.  This time you should choose <em>upload files</em>. Select the relevant project files for the subdirectory.
+			</li>
+			<li>Repeat the step above for all files except <code>index.html</code>.  For <code>index.html</code>, directly copy and paste your source code from your local project into the <code>index.html</code> file in the Github repository.</li>
+		</ul>
+	</div>
+	<h2>Checkpoint 4</h2>
+	<div class="toggle">
+		<p>In your browser, navigate to <em>username.github.io</em>. Again, <em>username</em> should be the username of your GitHub account. Your website should be live now! Share a link to your website in the Lab 13 submission form.</p>
+	</div>
+	<script src="./scripts/toggle.js"></script>
+</body>
+</html>
