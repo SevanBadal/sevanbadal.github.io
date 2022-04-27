@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+body {
+	background: #202124;
+}
+a {
+	font-size: inherit;
+	color:#C3CD89;
+}
+code {
+	background: #f4f4f4;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	color: #666;
+	padding: 0em 0.5em 0em 0.5em;
+	page-break-inside: avoid;
+	font-family: monospace;
+	font-size: 1em;
+	max-width: 100%;
+	display: inline;
+	overflow: auto;
+	word-wrap: break-word;
+	white-space: pre;
+}
+codeblock {
+	background: #f4f4f4;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	color: #666;
+	padding: 0em 0.5em 0em 0.5em;
+	page-break-inside: avoid;
+	font-family: monospace;
+	font-size: 1em;
+	max-width: 100%;
+	display: inline-block;
+	overflow: auto;
+	word-wrap: break-word;
+	white-space: pre;
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	padding: 1em;
+	font-size: 3em;
+	transition: background-color 0.5s ease-in-out;
+}
+footer:hover {
+	background-color: #6F4388;
+}
+i {
+	font-size: inherit;
+}
+h2, h3 {
+	padding: 3rem;
+	background: #8F60A8;
+	border-bottom: 2px solid white;
+}
+img {
+	width: 100%;
+}
+h1 {
+	padding: 3rem;
+	font-size: 4rem;
+	background: #6F4388;
+	display: flex;
+}
+h2 {
+	font-size: 3rem;
+}
+h3 {
+	font-size: 2.75rem;
+}
+.anchor-list > li:hover {
+	color: #bba9c5;
+}
+h1 > span {
+	margin-right: auto;
+}
+li {
+	flex-grow: 1;
+	color: inherit;
+	line-height: 1.25em;
+}
+li > ul {
+	margin: 1em;
+}
+li > ol {
+	margin: 1em;
+}
+li {
+	margin-top: 0.5em;
+}
+p, li, span, em{
+	font-size: 2rem;
+	padding: 0;
+}
+p,ul, ol {
+	margin: 3rem;
+}
+span {
+	font-size: inherit;
+}
+body > section:nth-child(1) > header > h1 > span > i {
+	margin-right: 1em;
+}
+h2:hover {
+	cursor: n-resize;
+}
+.toggle {
+	max-height: 10000px;
+	overflow: hidden;
+	transition: max-height 500ms ease-in-out;
+}
+.shrink {
+	max-height: 0px;
+}
+img {
+	max-width: 750px;
+	width: 100%;
+}
+@media only screen and (max-width: 400px) {
+	body > section:nth-child(1) > header > h1 > span > i{
+		display: none;
+	}
+}
